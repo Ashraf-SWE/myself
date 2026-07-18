@@ -254,12 +254,76 @@ typeLoop();
 
 /* ============ Projects data + render + filter ============ */
 const projects = [
-  {t:'TaskFlow — Team Kanban', d:'Real-time collaborative kanban board with live WebSocket sync and drag-and-drop support.', tags:['React','Node.js','Socket.io'], cat:'web', icon:'TF'},
-  {t:'PayGate API', d:'Multi-gateway payment processing system with rate-limiting and fraud detection on a production-grade backend.', tags:['Node.js','PostgreSQL','Redis'], cat:'api', icon:'PG'},
-  {t:'DevMetrics CLI', d:'Terminal-based productivity tracker for developers that analyzes git activity to surface insights.', tags:['Python','Typer','SQLite'], cat:'tool', icon:'DM'},
-  {t:'ShopSphere', d:'Full-featured e-commerce platform — cart, checkout, admin dashboard, and inventory management.', tags:['Next.js','Stripe','MongoDB'], cat:'web', icon:'SS'},
-  {t:'InsightGraph', d:'GraphQL-based analytics API with complex query optimization and a caching layer.', tags:['GraphQL','Node.js','Docker'], cat:'api', icon:'IG'},
-  {t:'CodeSnap', d:'Browser extension that turns code snippets into beautiful, shareable images.', tags:['JavaScript','Canvas API'], cat:'tool', icon:'CS'}
+  {
+    t: 'Class Routine',
+    d: 'A simple class routine app to view daily and weekly schedules.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    cat: 'web',
+    icon: 'CR'
+  },
+  {
+    t: 'Digital Calculator',
+    d: 'Basic calculator for performing arithmetic operations.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    cat: 'tool',
+    icon: 'CA'
+  },
+  {
+    t: 'Alarm Clock',
+    d: 'Set alarms and receive notifications at the selected time.',
+    tags: ['JavaScript', 'HTML'],
+    cat: 'tool',
+    icon: 'AL'
+  },
+  {
+    t: 'To-Do List',
+    d: 'Add, edit, complete, and delete daily tasks with local storage.',
+    tags: ['JavaScript', 'Local Storage'],
+    cat: 'web',
+    icon: 'TD'
+  },
+  {
+    t: 'Weather App',
+    d: 'Shows current weather information using a weather API.',
+    tags: ['JavaScript', 'API'],
+    cat: 'web',
+    icon: 'WA'
+  },
+  {
+    t: 'Student Result Calculator',
+    d: 'Calculate GPA and display grades based on entered marks.',
+    tags: ['JavaScript'],
+    cat: 'tool',
+    icon: 'SR'
+  },
+  {
+    t: 'BMI Calculator',
+    d: 'Calculate Body Mass Index using height and weight.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    cat: 'tool',
+    icon: 'BM'
+  },
+  {
+    t: 'Age Calculator',
+    d: 'Calculate exact age from the selected date of birth.',
+    tags: ['JavaScript'],
+    cat: 'tool',
+    icon: 'AG'
+  },
+  {
+    t: 'Expense Tracker',
+    d: 'Track daily income and expenses with local storage.',
+    tags: ['JavaScript', 'Local Storage'],
+    cat: 'web',
+    icon: 'ET'
+  },
+  {
+    t: 'Quiz App',
+    d: 'Interactive multiple-choice quiz with score calculation.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    cat: 'web',
+    icon: 'QZ'
+  }
 ];
 const grid = document.getElementById('project-grid');
 function renderProjects(filter){
